@@ -1,0 +1,133 @@
+footer nav{
+    display: flex;
+    justify-content: center;
+}
+
+.footer-favicon{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    width: 2rem;
+    height: 2rem;
+}
+
+main {
+    max-width: 1200px;
+}
+
+.kontaktformulär {
+    max-width: 1200px;
+    margin: 3rem auto;
+    padding: 2rem;
+}
+
+.kontaktformulär h1 {
+    margin: 0 0 2.5rem;
+    padding: 0;
+    font-size: 2rem;
+    text-align: left;
+}
+
+.kontaktform {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2rem 1.5rem;
+}
+
+.kontaktform label,
+.namnfält {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    min-width: 0;
+    margin: 0;
+}
+
+.namnfält {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.75rem 1.5rem;
+    padding: 0;
+    border: 0;
+}
+
+.namnfält legend {
+    grid-column: 1 / -1;
+    margin-bottom: 0.75rem;
+    padding: 0;
+}
+
+.kontaktform label span,
+.namnfält legend {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.kontaktform input,
+.kontaktform select,
+.kontaktform textarea {
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 3.5rem;
+    padding: 0.85rem 1rem;
+    border: 1px solid #d9d9d9;
+    border-radius: 0;
+    background-color: #f7f7f7;
+    color: #202923;
+    font: inherit;
+}
+
+.kontaktform textarea {
+    min-height: 10rem;
+    resize: vertical;
+}
+
+.kontaktform input:focus,
+.kontaktform select:focus,
+.kontaktform textarea:focus {
+    outline: 2px solid #3177a6;
+    outline-offset: 2px;
+}
+
+.kommentarsfält,
+.kontaktform button {
+    grid-column: 1 / -1;
+}
+
+.kontaktform button {
+    justify-self: start;
+    padding: 0.9rem 1.5rem;
+    border: 0;
+    border-radius: 0.25rem;
+    background-color: #3177a6;
+    color: white;
+    font: inherit;
+    cursor: pointer;
+}
+
+.kontaktform button:hover {
+    background-color: #245b80;
+}
+
+@media (max-width: 600px) {
+    .kontaktformulär {
+        margin: 1.5rem auto;
+        padding: 1.25rem;
+    }
+
+    .kontaktform {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .namnfält {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .namnfält legend,
+    .kommentarsfält,
+    .kontaktform button {
+        grid-column: 1;
+    }
+}

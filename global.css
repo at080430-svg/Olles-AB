@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
+
+body {
+    margin: 0 auto;
+    color: #202923;
+    font-weight: 0;
+    font-family: "Source Sans Pro", sans-serif;
+}
+
+h1 {
+    padding-top: 2rem;
+    font-size: 5rem;
+    text-align: center;
+}
+
+h2 {
+    margin-top: -3rem;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.kontakt {
+    border: 3px solid white;
+    margin-top: 3rem;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    background-color: #3177a6;
+    color: #202923;
+    font-size: 1.25rem;
+    color: white;
+    max-width: 20rem;
+    margin-left: auto;
+    margin-right: auto;
+
+    display: flex;
+    justify-content: center;
+}
+
+.kontakt:hover{
+    background-color: #c4e5fb;
+    color: #3188a3;
+}
+
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logga {
+    padding: 2rem 3rem;
+    border-bottom: 1px solid #202923;
+}
+
+nav {
+    padding-top: 1rem;
+}
+
+nav a {
+    padding: 0 1rem;
+}
+
+a{
+    text-decoration: none;
+    color: #202923;
+    font-size: 1.5rem;
+    padding-top: 1rem;
+}
+
+a:hover{
+    color: black;
+}
+
+footer {
+    border-top: 1px solid #202923;
+    background-color: #202923;
+
+    margin-top: 5rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border-top: 1px solid #202923;
+    background-color: #202923;
+    margin-top: 5rem;
+    text-align: center;
+}
+
+
+footer a {
+    color: white;
+    font-size: 1rem;
+}
+
+footer a:hover {
+    color: #c4e5fb;
+}
+
+
